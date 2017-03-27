@@ -1,4 +1,4 @@
-# enew.github.io
+# englishnews.github.io
 # Project ENEWS
 
 # Thành viên
