@@ -2,439 +2,471 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <style>
+        .bg {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .vcenter {
+            display: inline-block;
+            vertical-align: middle;
+            float: none;
+        }
+        .transp_img {
+            opacity: 0.5;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+        }
+        input {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+            box-sizing: border-box;
+        }
+    </style>
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
+    <!-- ===========================
+    THEME INFO
+    =========================== -->
+    <meta name="description" content="A free Bootstrap powerd HTML template exclusively crafted for the super lazy designers like me who designed thousand of websites till today but never got a chance to build one himself.">
+    <meta name="keywords" content="Free Portfolio Template, Free Template, Free Bootstrap Template, Dribbble Portfolio Template, Free HTML5 Template">
+    <meta name="author" content="EvenFly Team">
 
-    <title>ENEWS - Thế giới tin tức và giải trí bằng tiếng Anh</title>
+    <!-- SLIDER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slider/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="slider/css/page.css">
+    <link rel="stylesheet" type="text/css" href="slider/css/indySliceSlider.css">
+    <script src="slider/js/jquery.indySliceSlider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $('#indy-slice-slider').indySliceSlider();
+        });
+    </script>
+    <!--SLIDER END>
+    <!-- DEVEOPER'S NOTE:
+    This is a free Bootstrap powered HTML template from EvenFly. Feel free to download, modify and use it for yourself or your clients as long there is no money involved.
+    
+    Please don't try to sale it from anywhere; because I want it to be free, forever. If you sale it, That's me who deserves the money, not you :)
+    -->
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ===========================
+    SITE TITLE
+    =========================== -->
+    <title>ENEWS - CẬP NHẬT TIN TỨC VÀ GIẢI TRÍ BẰNG TIẾNG ANH</title>
+    <!-- This is what you see on your browser tab-->
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- ===========================
+    FAVICONS
+    =========================== -->
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png" />
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- ===========================
+    STYLESHEETS
+    =========================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-    <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <!-- ===========================
+    ICONS: 
+    =========================== -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- ===========================
+    GOOGLE FONTS
+    =========================== -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Antic|Raleway:300">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- ===========================
+   GOOGLE ANALYTICS (Optional)
+   =========================== -->
+
+    <!--Replace this line with your analytics code-->
+
+    <!-- Analytics end-->
 
 </head>
 
-<body id="page-top">
+<body data-spy="scroll">
+    <!-- Preloader 
+    <div id="preloader">
+        <div id="status">
+            <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="8s"></div>
+        </div>
+    </div>
+    -->
+    <header>
+        <!-- ===========================
+         NAVBAR START
+         =========================== -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">ENEWS</a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+
+                    <a class="navbar-brand" href="#hero">
+                        <!-- Replace Drifolio Bootstrap with your Site Name and remove icon-grid to remove the placeholder icon -->
+                        <span class="brandicon icon-grid"></span>
+                        <span class="brandname">ENEWS</span>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--YOUR NAVIGATION ITEMS STRAT BELOW-->
+                        <li><a href="#about"><span class="btnicon icon-user"></span>About</a></li>
+                        <li><a href="#services"><span class="btnicon icon-cup"></span>Services</a></li>
+                        <li><a href="#portfolio"><span class="btnicon icon-rocket"></span>Portfolio</a></li>
+                        <li><a href="#testimonials"><span class="btnicon icon-bubble"></span>Testimonials</a></li>
+
+                        <!--don't forget to replace my email address below with yours-->
+                        <li><a href="mailto:m@creatrix.us"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
+                        <li class="active"><a href=""><span class="btnicon icon-cloud-download"></span>Download CV</a></li>
+                    </ul>
+
+                </div>
+                <!--.nav-collapse -->
             </div>
+        </nav>
+        <!--navbar end-->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">Giới thiệu</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Tính năng</a>
-                    </li>
-					<li>
-                        <a class="page-scroll" href="#tech_methods">Phương pháp kỹ thuật</a>
-                    </li>
-					<li>
-                        <a class="page-scroll" href="#business_methods">Phương pháp thương mại</a>
-                    </li>
-					<li>
-                        <a class="page-scroll" href="#poster">Poster</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Đội ngũ phát triển</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Liên hệ</a>
-                    </li>
+        <!-- ===========================
+        HERO AREA
+        =========================== -->
+        <div id="hero">
+            <div class="container herocontent">
+                <h2 class="wow fadeInUp" data-wow-duration="1s">ENEWS</h2>
+                <h4 class="wow fadeInDown" data-wow-duration="2s">CẬP NHẬT TIN TỨC VÀ GIẢI TRÍ BẰNG TIẾNG ANH</h4>
+            </div>
+            <!-- Featured image on the Hero area -->
+            <img class="heroshot wow bounceInUp" data-wow-duration="2s" src="img/demo.png" style="width:60%;height:auto">
+        </div>
+        <!--HERO AREA END-->
+
+    </header>
+    <!--header end-->
+
+    <!-- ===========================
+    FEATURED CLIENTS SECTION START
+    =========================== -->
+    <!--
+    <div id="clients" display="none">
+        <div class="container">
+            <div class="col-md-3">
+                <h4>Proudly worked with:</h4>
+            </div>
+            <div class="col-md-9">
+                <ul>
+                    <!--CLIENTS LOGO
+                    <li><img src="img/payoneer.png" alt="Payoneer"></li>
+                    <li><img src="img/amazon.png" alt="Amazon"></li>
+                    <li><img src="img/elance-odesk.png" alt="Elance-oDesk"></li>
+                    <li><img src="img/curb.png" alt="Curb Envy"></li>
+                </ul>
+                <!--CLIENTS LOGO END
+            </div>
+        </div>
+        <hr>
+        <!-- SECTION SEPARETOR LINE 
+    </div>
+    <!--FEATURED CLIENTS SECTION END-->
+
+    <!-- ===========================
+    PROBLEM SECTION START
+    =========================== -->
+    <div id="about" class="container bg font-weight-bold" style="font-weight: bold;">
+        <h2 class="wow fadeInDown" data-wow-duration="2s">VẤN ĐỀ</h2>
+        <h3 class="wow fadeInUp" data-wow-duration="1s">Khi tìm tài liệu, bài đọc tiếng Anh ở sách hoặc trên mạng Internet để đọc nhằm nâng cao vốn từ vựng và kĩ năng đọc tiếng Anh, bạn có gặp phải vấn đề:</h3>
+        <section id="wrap">
+
+            <section id="indy-slice-slider" class="indy-slice-slider slider-template">
+                <section class="slide-container bg" style="background: url('img/bg.jpg')">
+                    <article class="slice-slide active">
+                        <section class="slice-part">
+                            <section class="slice-img-container">
+                                <section class="slice-img">
+                                    <div>
+                                        <!-- SHOW PROBLEM-->
+                                        <div class="col-md-4">
+                                            <div class="row vcenter">
+                                                <h3 class="wow fadeInDown" style="color:white" data-wow-duration="1s">Đối với tài liệu từ sách coursebook, sách giáo khoa: Thường khô khan, nhàm chán, không gây hứng thú cho người học.</h3>
+                                            </div>
+                                        </div>
+                                        <!-- SHOW PROBLEM END-->
+
+                                        <!-- PROBLEM PRESENTATION -->
+                                        <div class="col-md-8 wow fadeInUp myphoto" data-wow-duration="2s">
+                                            <img src="img/tudy.jpg" style="width: 100%; height: auto">
+                                        </div>
+                                        <!-- PROBLEM PRESENTATION END -->
+                                    </div>
+                                    <!-- PROBLEM 1 END -->
+                                </section>
+                            </section>
+                        </section>
+
+                    </article>
+                    <article class="slice-slide prev">
+
+                        <section class="slice-part">
+                            <section class="slice-img-container">
+                                <section class="slice-img">
+                                    <!-- PROBLEM 2 -->
+                                    <div>
+                                        <!-- PROBLEM PRESENTATION -->
+                                        <div class="col-md-7 wow fadeInUp myphoto" data-wow-duration="2s">
+                                            <img src="img/confused_man.jpg" style="width: 100%; height: auto">
+                                        </div>
+                                        <!-- PROBLEM PRESENTATION END -->
+
+                                        <!-- SHOW PROBLEM-->
+                                        <div class="col-md-5">
+                                            <div class="row vcenter">
+                                                <h3 class="wow fadeInDown" style="color:white" data-wow-duration="1s">Đối với các bài đọc, bản tin từ Internet: Mức độ từ vựng không phù hợp, quá khó, dẫn đến khó hiểu , dần dần nản chí và bỏ cuộc.</h3>
+                                            </div>
+                                        </div>
+                                        <!-- SHOW PROBLEM END-->
+
+                                    </div>
+                                    <!-- PROBLEM 2 END -->
+                                </section>
+                            </section>
+                        </section>
+
+                    </article>
+
+                </section>
+            </section>
+
+
+        </section>
+
+        <!-- End WOWSlider.com BODY section -->
+
+    </div>
+
+
+    <hr class="primary">
+    <!-- SECTION SEPARETOR LINE -->
+
+    <!-- ===========================
+    SERVICE SECTION START
+    =========================== -->
+    <div id="services" style="background: url('img/solution_background.jpg')" class="container bg" >
+
+        <!-- SERVICE SECTION HEADING START -->
+        <div class="sectionhead row wow fadeInUp" style="background-color: rgba(255, 255, 255, 0.8);">
+            <span class="bigicon icon-cup "></span>
+            <h3><b>GIẢI PHÁP</b></h3>
+            <hr class="separetor">
+            <h5><b>Giải pháp của chúng tôi là xây dựng một hệ thống với quy trình sau:</b></h5>
+        </div>
+        <!--SERVICE SECTION HEADING END-->
+        <img class="heroshot wow bounceInUp" data-wow-duration="1s" src="img/giai_phap.png" style="width:80%;height:auto">
+
+        <div class="sectionfoot row wow fadeInUp" style="background-color: rgba(255, 255, 255, 0.8);">
+            <h4 class="wow fadeInUp" data-wow-duration="1s"><b>Như vậy, người dùng sẽ luôn có một nguồn tin tức tiếng Anh dồi dào, vừa thú vị vừa phù hợp với trình độ của mình để luyện tập mỗi ngày.</b></h4>
+        </div>
+    </div>
+    <!-- SERVICE SECTION END -->
+    <!-- ===========================
+    PORTFOLIO SECTION START
+    =========================== -->
+    <div id="portfolio">
+        <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+            <span class="bigicon icon-rocket"></span>
+            <h3>MÔ HÌNH HỆ THỐNG</h3>
+            <hr class="separetor">
+        </div>
+        <!-- PORTFOLIO SECTION HEAD END -->
+
+        <!-- PORTFOLIO ITEMS START -->
+        <div class="portfolioitems container">
+            <ul>
+                <div id="shotsByPlayerId"> </div>
+            </ul>
+            <!--REFER TO THE js/drifolio.js-->
+        </div>
+        <!-- PORTFOLIO ITEMS END -->
+
+        <!--Replace the URL below with your dribbble profile URL-->
+        <a class="btn btn-default wow fadeInUp" href="http://dribbble.com/srizon" role="button">
+            <span class="btnicon icon-social-dribbble"></span>
+            <span class="button_text">View all items</span>
+        </a>
+    </div>
+    <!-- PORTFOLIO SECTION END -->
+
+    <!-- ===========================
+    TESTIMONIAL SECTION START
+    =========================== -->
+    <div id="testimonials" class="container">
+        <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+            <span class="bigicon icon-bubbles"></span>
+            <h3>This is what I love to listen</h3>
+            <h4>Expedita nobis natus doloribus blanditiis quos, atque voluptatem, veritatis soluta eveniet ea!</h4>
+            <hr class="separetor">
+        </div>
+        <!-- TESTIMONIAL SECTIONHEAD END -->
+
+        <!-- TESTIMONIAL ITEMS START -->
+        <div class="row">
+            <!-- 1ST TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                <div class="clientsphoto">
+                    <img src="img/dan.jpg" alt="Dan">
+                </div>
+
+                <div class="quote">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et.</p>
+                    </blockquote>
+                    <h5>Dan Cederholm</h5>
+                    <p>Co-Founder, Dribbble</p>
+                </div>
+            </div>
+            <!-- 1ST TESTIMONIAL ITEM END -->
+
+            <!-- 2ND TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
+                <div class="clientsphoto">
+                    <img src="img/bill.jpg" alt="Bill">
+                </div>
+
+                <div class="quote">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et. lorem</p>
+                    </blockquote>
+                    <h5>Bill S Kenney</h5>
+                    <p>Art Director at Focus Lab LLC.</p>
+                </div>
+            </div>
+            <!-- 2ND TESTIMONIAL ITEM END -->
+
+            <!-- 3RD TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
+                <div class="clientsphoto">
+                    <img src="img/eric.png" alt="Eric">
+                </div>
+
+                <div class="quote">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et.</p>
+                    </blockquote>
+                    <h5>Eric Hoffman</h5>
+                    <p>Principal Designer, JellyJar</p>
+                </div>
+            </div>
+            <!-- 3RD TESTIMONIAL ITEM END -->
+
+            <!-- 4TH TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                <div class="clientsphoto">
+                    <img src="img/ramil.jpg" alt="Ramil">
+                </div>
+
+                <div class="quote">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et.</p>
+                    </blockquote>
+                    <h5>Ramil Derogongun</h5>
+                    <p>Visual Designer, Bluroon</p>
+                </div>
+            </div>
+            <!-- 4TH TESTIMONIAL ITEM END -->
+        </div>
+    </div>
+    <!-- TESTIMONIAL SECTION END -->
+
+    <!-- ===========================
+    FOOTER START
+    =========================== -->
+    <footer>
+        <div class="container">
+            <span class="bigicon icon-speedometer "></span>
+
+            <div class="footerlinks">
+                <!-- FOOTER LINKS START -->
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+
+                    <!--replace the email address below with your email address-->
+                    <li><a href="mailto:m@creatrix.us">Contact</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+            <!-- FOOTER LINKS END -->
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Lúc học đọc tiếng Anh, bạn có gặp phải vấn đề:</h1>
-                <hr>
-				<div><p><p>
-                	<p>Học qua tài liệu trong coursesbook, textbook: nhàm chán, không gây hứng thú cho người đọc.</p>
-                	<p>Học qua các website tiếng anh trên mạng: thường không phù hợp với trình độ người học, quá khó hoặc không phù hợp, dẫn đến khó hiểu và nản chí. </p>
-				</div>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Đừng lo!!! Đã có ENEWS!!!</a>
+            <div class="copyright">
+                <!-- FOOTER COPYRIGHT START -->
+                <p><a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and coded by <a href="http://evenfly.com">EvenFly Team</a>. All logo and images in this template used for preview purpose only. You are free to
+                    use the template but make sure to use your own images.</p>
             </div>
-        </div>
-    </header>
+            <!-- FOOTER COPYRIGHT END -->
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">ENEWS là gì???</h2>
-                    <hr class="light">
-					<div class="text-faded"> 
-                    	<p>Trang web và ứng dụng di động đọc tin tức và giải trí bằng tiếng Anh, giống như một "FACEBOOK bằng tiếng Anh"</p>
-						<p>Giúp người dùng học tiếng Anh thoải mái và chủ động bằng cách đưa ra các mẫu tin, các video tiếng Anh phù hợp với sở thích và phù hợp với trình độ ngoại ngữ của người dùng</p>
-					</div>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Tính năng</a>
-                </div>
+            <div class="footersocial wow fadeInUp" data-wow-duration="3s">
+                <!-- FOOTER SOCIAL ICONS START -->
+                <ul>
+                    <li><a href="http://facebook.com/MamunSrizon"><span class="icon-social-facebook"></span></a></li>
+                    <li><a href="http://twitter.com/MamunSrizon"><span class="icon-social-twitter"></span></a></li>
+                    <li><a href="#"><span class="icon-social-youtube"></span></a></li>
+                    <li><a href="http://dribbble.com/srizon"><span class="icon-social-dribbble"></span></a></li>
+                    <li><a href="#"><span class="icon-social-tumblr"></span></a></li>
+                </ul>
             </div>
+            <!-- FOOTER SOCIAL ICONS END -->
         </div>
-    </section>
+    </footer>
+    <!-- FOOTER END -->
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">ENEWS có gì đặc biệt???</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i> 
-                        <h3>Lựa chọn chủ động</h3>
-                        <p class="text-muted">Mỗi người dùng khi đăng nhập sẽ chọn những lĩnh vực, các chủ đề thông tin mà mình quan tâm hoặc thích thú</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Nội dung linh động</h3>
-                        <p class="text-muted">Trang web sẽ luôn cập nhật các thông tin hot nhất, thú vị, nhiều lượt xem trên các trang web tiếng Anh, phân loại thông tin dựa trên chủ đề thông tin và độ khó từ vựng trong các bài viết hay video đó, rồi đăng các nội dung đó cho những người dùng phù hợp tương ứng</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Từ điển tự động thông minh</h3>
-                        <p class="text-muted">Trang web sẽ tích hợp từ điển nhanh để người dùng dò nội dung không hiểu và trong lúc người dùng dò từ vựng, trang web sẽ đồng thời đánh giá trình độ tiếng Anh của người dùng, để từ đó trong những lần sau sẽ đưa các thông tin với từ vựng có trình độ phù hợp</p>
-                    </div>
-                </div>
-				<div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Kết nối mọi người</h3>
-                        <p class="text-muted">Người dùng có thể đánh giá thông tin, để web đề xuất thông tin phù hợp hơn. Người dùng cũng có thể bình luận và chia sẻ thông tin cho bạn bè</p>
-                    </div>
-                </div>
-				<div class="col-md-2 col-md-offset-5"><a href="#tech_methods" class="btn btn-primary btn-xl page-scroll">Phương pháp kỹ thuật</a></div>
-            </div>
-			
-        </div>
-    </section>
-	
-	<section class="bg-primary" id="tech_methods">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify">
-                    <h2 class="section-heading text-center">Phương pháp kỹ thuật</h2>
-                    <hr class="light">
-					<div>
-                    	
-					<ol>
-						<li>Tổng hợp tất cả thông tin nổi bật từ các website tiếng anh
-						</li>
-						<ul>
-							<li>Có một tập hợp các website tin tức tiếng anh nổi tiếng trong cơ sở dữ liệu. Các website này do người quản lý hệ thống nhập vào, và cập nhật theo thời gian, theo tiêu chí chọn các web có nội dung phong phú và có lượng người đọc cao.
-							</li><li>Website sẽ tự động hàng ngày duyệt hết từ trong các trang tin trên, duyệt hết các tin đăng trong thời gian gần đây (trong vòng 1 tuần), và sẽ lấy 10% tin có số lượt xem nhiều nhất của mỗi trang web và lưu thông tin lại.
-							</li>
-						</ul>
-						<li>Mỗi tin tức được tải về lưu trong hệ thống sẽ được các thuật toán phân loại tự động theo 2 tiêu chí sau:
-						</li>
-						<ul>
-							<li>Theo chủ đề: Dựa vào tên mục đăng tin đó trong trong website gốc, và dựa vào tập hợp các từ sử dụng trong câu, thuật toán sẽ đánh giá tin đó thuộc loại chủ đề nào. VD: bóng đá, chính trị, du học,...
-							</li><li>Theo trình độ: Hệ thống sẽ có một danh sách hầu hết các từ vựng tiếng anh, được phân theo cấp độ khó, từ 1 đến 10. Sau đó, thuật toán đánh giá sẽ duyệt hết các từ trong bản tin đó, thống kê số lượng từ vựng ở mỗi cấp độ, từ đó cho điểm đánh giá độ khó từ vựng của bản tin đó, từ 1 đến 10 (độ khó của bản tin là giá trị kì vọng của điểm của từ).
-							</li>
-						</ul>
-						<li>Tạo cho mỗi người dùng một tài khoản để sử dụng, chứa những thông tin sau:
-						</li>
-						<ul>
-							<li>Tên đăng nhập và mật khẩu
-							</li><li>Danh sách những chủ đề mà người dùng yêu thích hoặc quan tâm. Có được thông tin này bằng 2 cách sau:
-							</li>
-							<ul>
-								<li>Lần đầu tiên sử dụng website, người dùng sẽ được đưa ra một bảng chọn các chủ đề, sở thích. Người dùng sẽ tích chọn những chủ đề đúng với sở thích và quan tâm của mình.
-								</li><li>Trong lúc người dùng đọc các tin được đưa ra trên trang web (sẽ được đề cập ở phần sau), người dùng sẽ nhấn vào các nút "Thú vị" ở cuối mỗi tin (tương tự nút like trên Facebook) để đánh giá độ thí vị hấp dẫn của tin, qua đó đánh giá được người dùng có yêu thích một chủ đề nào đó hay không và bổ sung thồn tin vào danh sách chủ đề của người dùng.
-								</li>
-							</ul>
-							<li>Trình độ từ vựng của người dùng (đánh giá theo điểm từ 1 đến 10). Thông tin này sẽ có được bằng 2 cách sau:
-							</li>
-							<ul>
-								<li>Lần đầu sử dụng website, người dùng sẽ trải qua 1 bài test từ vựng nhỏ để dánh giá trình độ từ vựng của người dùng
-								</li><li>Trong lúc người dùng đọc các tin được đưa ra trên trang web, khi gặp một từ chưa biết, người dùng sẽ sử dụng từ điển tra cứu nhanh tích hợp vào sẵn trong trang web (sẽ đề cập ở phần sau), để tra từ đó. Qua đó hệ thống sẽ biết được người dùng không biết những từ vựng thuộc cập độ nào, đã biết những từ thuộc cấp độ nào, từ đó thuật toán sẽ đánh giá được trình độ của người dùng
-								</li>
-							</ul>
-						<li>Tài khoản này của người dùng sẽ liên kết với tài khoản facebook của họ, để có thể thực hiện các chức nay tương tác với bạn bè(sẽ đề cập ở phần sau).
-						</li>
-						</ul>
-						<li>Mỗi lần người dùng lên website để đọc tin tức, website sẽ sử dụng thuật toán, đối chiếu thông tin tài khoản của người dùng, để chọn lọc trong cơ sở dữ liệu, những tin tức phù hợp nhất với người dùng đó, để đưa ra cho người đọc dưới dạng timeline:
-						</li>
-						<ul>
-						<li>Mỗi mục trong timeline sẽ chứa nôi dung tin đó, kèm theo link đến bản tin gốc.
-						</li><li>Dưới mỗi mục(mỗi tin) sẽ có những nút để đánh giá mức độ thú vị, phần để viết bình luận cũng như nút share tin này cho bạn bè trên facebook nếu thấy tin bổ ích.
-						</li><li>Website tích hợp một từ điển dịch nhanh, khi người dùng không biết từ nào thì click đúp vào từ đó để dịch. Đồng thời lúc đó, hệ thống sẽ đựa trên mức độ của từ đang dịch để đánh giá trình độ người dùng.
-						</li>
-						</ul>
-						<li>Vì quá trình học tiếng anh cần kiên trì, nên nếu một thời gian người dùng không lên web hoặc người dùng sử dụng web với thời gian chưa đủ, trang web sẽ có thông báo trên email hoặc facebook để nhắc nhở người dùng. Ngoài ra, cứ sau một khoảng thời gian nhất đinh, website sẽ cho người dùng thực hiện lại một bài test nhỏ, với từ vựng đã học được trong thời gian gần đây qua các bản tin, để người dùng có thể đánh giá mức độ tiến bộ của mình
-						</li>
-					</ol>	
-						
-					</div>
-                    <div class="col-md-2 col-md-offset-4"><a href="#business_methods" class="page-scroll btn btn-default btn-xl sr-button ">Phương pháp thương mại</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-	<section class="bg-primary" id="business_methods">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify">
-                    <h2 class="text-center">Phương pháp thương mại</h2>
-                    <hr class="light">
-					<div>
-                    	
-					<ol>
-						<li>Đối tượng hướng tới: Tất cả những người có nhu cầu tăng cường trình độ tiếng anh, nhất là khả năng đọc và vốn từ vựng, từ sinh viên, học sinh, đến người đi làm đều có thể thường xuyên sử hệ thống để cái thiện trình độ tiếng Anh.
-						</li>
-						<li>Người dùng sẽ nhận được gì khi sử dụng hệ thống?
-						</li>
-						<ul>
-							<li>Luôn có nguồn tiếng anh thú vị, phong phú, dễ đọc, phù hợp với trình độ, để có thể luyện tiếng anh mọi lúc mọi nơi.
-							</li><li>Với nguồn tin tức thú vị và dễ đọc, việc học tiếng anh của người dùng cũng trở nên thú vị như việc lướt facebook vậy, không còn áp lực chán nản, lại có hiệu quả cao hơn.
-							</li><li>Những nguồn tiếng anh đó đồng thời là nguồn tin tức xã hội cập nhật, những chủ đề mà người dùng quan tâm, nên thay vì lên báo điện tử hoặc facebook đọc tin tức thì người dùng Enews có thể vừa học tiếng anh vừa cập nhật tin tức hằng ngày.
-							</li>
-						</ul>
-						<li>Cách tạo doanh thu cho dự án
-						</li>
-						<ul>
-							<li>Bằng cách nhận đưa quảng cáo lên trang web.
-							</li><li>Doanh thu sẽ tăng theo số lượt truy cập trang web.
-							</li>
-						</ul>
-						<li>Làm sao để người dùng biết đến trang web?</li>
-						<ul>
-							<li>Bỏ tiền ra để đặt quảng cáo trên các trang web nổi tiếng nhiều người sử dụng
-							</li>
-						</ul>
-					</ol>
-						
-					</div>
-                    <div class="col-md-2 col-md-offset-5"><a href="#poster" class="page-scroll btn btn-default btn-xl sr-button ">Poster</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-	<section class="no-padding" id="poster">
-		
-        <div class="container-fluid" style="background-color:gray">
-            	<div class="col-lg-4 col-sm-6">
-                    <a href="img/tqcuong.jpg" class="portfolio-box">
-                        <img src="img/tqcuong.jpg" style="display:none" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    
-                                </div>
-                                <div class="project-name">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-        </div>
-				<div class="col-lg-4 col-sm-6">
-                    <a href="/Bản chiếu1.JPG" class="portfolio-box">
-                        <img src="/Bản chiếu1.JPG" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    
-                                </div>
-                                <div class="project-name">
-                                    Poster
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-				<div class="col-md-2 col-md-offset-4"><a href="#portfolio" class="page-scroll btn btn-default btn-xl sr-button ">Ai là người đứng sau ENEWS???</a></div>
-		</div>
-		
-    </section>
-	<aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Gặp gỡ nhóm phát triển ENEWS!!!</h2>
-                <!--<a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>-->
-            </div>
-        </div>
-    </aside>
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid" style="background-color:gray">
-            	
-				<div class="col-lg-4 col-sm-6">
-                    <a href="img/tqcuong.jpg" class="portfolio-box">
-                        <img src="img/tqcuong.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    
-                                </div>
-                                <div class="project-name">
-                                    Trần Quốc Cường
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/lhanh.jpg" class="portfolio-box">
-                        <img src="img/lhanh.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    
-                                </div>
-                                <div class="project-name">
-                                    Lê Hoàng Anh
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/dntbao.jpg" class="portfolio-box">
-                        <img src="img/dntbao.jpg"class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    
-                                </div>
-                                <div class="project-name">
-                                    Dương Nguyễn Thái Bảo
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-				<div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" style="display:none"  class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    
-                                </div>
-                                <div class="project-name">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/tvhoang.jpg" class="portfolio-box">
-                        <img src="img/tvhoang.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    
-                                </div>
-                                <div class="project-name">
-                                    Trương Văn Hoằng
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" style="display:none;" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    
-                                </div>
-                                <div class="project-name">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Thông tin liên hệ</h2>
-                    <hr class="primary">
-                    <p>Hãy gửi chúng tôi những đánh giá về ứng dụng để chúng tôi có thể phục vụ bạn tốt nhất</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">baosws@github.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
-
+    <!--Other necessary scripts-->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
+    <script src="js/drifolio.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
