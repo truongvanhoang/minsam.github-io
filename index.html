@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
+        .hr_blind {
+            border: none;
+            height: 0px;
+            /* Set the hr color */
+            color: #fff; /* old IE */
+            background-color: #fff; /* Modern Browsers */
+        }
+
         .panel-heading a:after {
             font-family: 'Glyphicons Halflings';
             content: "\e114";
@@ -325,28 +333,32 @@ SERVICE SECTION START
 <!-- ===========================
 PORTFOLIO SECTION START
 =========================== -->
-<div id="portfolio">
-    <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
-
+<div id="portfolio" style="background: url('img/procedure.jpg'); background-repeat: no-repeat; background-size: cover">
+    <div class="sectionhead wow bounceInUp" data-wow-duration="2s" style="background-color: rgba(255, 255, 255, 0.8);">
         <span class="bigicon icon-rocket" style="top: 100px"></span>
-        <h3>MÔ HÌNH HỆ THỐNG</h3>
+        <h3><b>MÔ HÌNH HỆ THỐNG</b></h3>
         <hr class="separetor">
+        <h4><b>Người dùng hướng đến của Enews là tất cả những người muốn nâng cao khả năng tiếng anh của mình, nhất là
+            về
+            từ vựng và kĩ năng đọc, đang gặp khó khăn với cách học truyền thống kém hiệu quả, và muốn tìm kiếm một giải
+            pháp giúp tự học chủ động và hiệu quả hơn.</b></h4>
+        <hr class="separetor">
+        <h4><b>Để sử dụng Enews, người dùng chỉ cần thực hiện các bước đơn giản sau</b></h4>
     </div>
     <!-- PORTFOLIO SECTION HEAD END -->
 
     <!-- PORTFOLIO ITEMS START -->
     <div class="container" style="min-height: 600px;">
         <!--<div class="col-md-2 dropbtn" ><a href="test.html" target="_blank" class="btn btn-primary btn-xl wow fadeInDown" data-wow-duration="1s">Tìm hiểu</a></div>-->
-        <div style="display: block">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"
-                 style="background-color: #afd9ee;border-radius: 5%; border-color: black; border-width: 10px">
-                <h3>Lên trang web <i>enews.vn</i></h3>
+        <div>
+            <div class="col-md-5"></div>
+            <div class="col-md-2  well">
+                <h4><b>Lên trang web <i>enews.vn</i></b></h4>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-5"></div>
         </div>
 
-        <hr style="clear: both">
+        <hr class="hr_blind" style="clear: both;">
 
         <div style="display: block">
             <div class="col-md-4"></div>
@@ -355,57 +367,165 @@ PORTFOLIO SECTION START
             </div>
             <div class="col-md-4"></div>
         </div>
-        <hr style="clear: both">
+
+        <hr class="hr_blind" style="clear: both;">
+
         <div style="display: block">
-            <div class="col-md-3"
-                 style="background-color: #afd9ee;border-radius: 5%; border-color: black; border-width: 10px">
-                <h3>
-                    Chọn danh sách chủ dề quan tâm
-                </h3>
+            <div class="col-md-3 well">
+                <h4><b>Chọn danh sách chủ đề quan tâm</b></h4>
             </div>
             <div class="col-md-1">
                 <img src="img/left.png" style="width: 100%; height: auto">
             </div>
-            <div class="col-md-4"
-                 style="background-color: #afd9ee;border-radius: 5%; border-color: black; border-width: 10px">
-                <h3>Tạo một tài khoản cá nhân trên hệ thống.</h3>
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default" id="panel1">
+            <div class="col-md-4 well">
+                <h4><b>Tạo một tài khoản cá nhân trên hệ thống.</b></h4>
+                <div class="panel-group" id="accordion" style="margin-bottom: 0px">
+                    <div class="panel panel-default" id="panel1" style="margin-bottom: 0px">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h5 class="panel-title">
                                 <a data-toggle="collapse" data-target="#collapseOne"
                                    href="#collapseOne">
-                                    Collapsible Group Item #1
+                                    Tìm hiểu thêm
                                 </a>
-                            </h4>
+                            </h5>
 
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse">
-                            <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
-                                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                accusamus labore sustainable VHS.
+                            <div class="panel-body" style="text-align: left">
+                                <p>Sau khi tạo tên đăng nhập và mật khẩu, hoặc đăng nhập bằng facebook của mình, người
+                                    dùng sẽ thực hiện tiếp 2 công đoạn sau:
+                                <ol class="list-group">
+                                    <li class="list-group-item">
+                                        1. Chọn chủ đề yêu thích của mình:
+                                        Sẽ có cửa sổ hiển thị tất cả các chủ đề mà hệ thống có, người dùng có hứng thú
+                                        hoặc quan tâm những chủ đề nào, thì click chọn vào những chủ đề đó.
+                                    </li>
+                                    <li class="list-group-item">
+                                        2. Làm một bài test nhỏ về từ vựng:
+                                        Có thể làm hoặc không, mục đích của việc này là giúp hệ thống nhận biết rõ hơn
+                                        về trình độ từ vựng hiện tại của bạn. Bài test chỉ tốn khoảng 10 phút để hoàn
+                                        thành nên sẽ không tốn quá nhiều thời gian của người dùng.
+                                    </li>
+                                    Sau khi thực hiện xong 2 công đoạn này, người dùng có thể bắt đầu vào Newsfeed để
+                                    đọc tin tức.
+                                </ol>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="col-md-1">
             <img src="img/right.png" style="width: 100%; height: auto">
         </div>
-        <div class="col-md-3"
-             style="background-color: #afd9ee;border-radius: 5%; border-color: black; border-width: 10px">
-            <h3>
-                Làm bài test để kiểm tra trình độ từ vựng
-            </h3>
+
+        <div class="col-md-3 well">
+            <h4>
+                <b>Làm bài test để kiểm tra trình độ từ vựng</b>
+            </h4>
+        </div>
+
+        <hr class="hr_blind" style="clear: both;">
+
+        <div style="display: block">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <img src="img/arrow_down.png" style="width: 20%; height: auto">
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <hr class="hr_blind" style="clear: both;">
+
+        <div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 well">
+
+                <h4><b>Vào trang Newsfeed của Enews để đọc tin tức.</b></h4>
+                <div class="panel-group" style="margin-bottom: 0px">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a data-toggle="collapse" data-target="#collapseTwo"
+                                   href="#collapseOne">
+                                    Tìm hiểu thêm
+                                </a>
+                            </h5>
+
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body" style="text-align: left">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        Lúc đọc mỗi tin, bạn có thể like và dislike nếu thấy nội dung tin thú vị hoặc
+                                        không thú vị. Việc này giúp hệ thống hiểu rõ được những sở thích của bạn rõ hơn,
+                                        từ đó đưa ra những tin phù hợp hơn.
+                                    </li>
+                                    <li class="list-group-item">
+                                        Bạn cũng có thể đánh giá độ khó của tin đối với trình độ của bạn. ĐIều này giúp
+                                        hệ thống rõ hơn về trình độ hiện tại của bạn.
+                                    </li>
+                                    <li class="list-group-item">
+                                        Bạn cũng có thể comment xuống dưới bản tin để trao đổi với mọi người về tin tức
+                                        ấy, hoặc share tin tức này cho bạn bè Facebook của mình nếu thấy tin tức bổ ích
+                                        hoặc thú vị.
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <hr class="hr_blind" style="clear: both;">
+        <div style="display: block">
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <img src="img/arrow_down.png" style="width: 50%; height: auto">
+            </div>
+            <div class="col-md-1">
+                <img src="img/arrow_down.png" style="width: 50%; height: auto">
+            </div>
+            <div class="col-md-1">
+                <img src="img/arrow_down.png" style="width: 50%; height: auto">
+            </div>
+            <div class="col-md-1">
+                <img src="img/arrow_down.png" style="width: 50%; height: auto">
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <hr class="hr_blind" style="clear: both;">
+        <div style="display: block">
+            <div class="col-md-4"></div>
+            <div class="col-md-1 well" style="min-height: 110px">
+                <h6><b>Like và Dislike</b></h6>
+            </div>
+            <div class="col-md-1 well" style="min-height: 110px">
+                <h6><b>Dò từ điển nhanh</b></h6>
+            </div>
+            <div class="col-md-1 well" style="min-height: 110px">
+                <h6><b>Đánh giá độ khó</b></h6>
+            </div>
+            <div class="col-md-1 well" style="min-height: 110px">
+                <h6><b>Comment và Share cho bạn bè</b></h6>
+            </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
     <!--REFER TO THE js/drifolio.js-->
+    <div class="sectionfoot row wow fadeInUp" style="background-color: rgba(255, 255, 255, 0.8);">
+        <h4 class="wow fadeInUp" data-wow-duration="1s"><b>
+            <div class="sectionfoot row wow fadeInUp" style="background-color: rgba(255, 255, 255, 0.8);">
+                <h4 class="wow fadeInUp" data-wow-duration="1s"><b>Như vậy, người dùng sẽ luôn có một nguồn tin tức
+                    tiếng Anh
+                    dồi dào, vừa thú vị vừa phù hợp với trình độ của mình để luyện tập mỗi ngày.</b></h4>
+            </div>
+        </b></h4>
+    </div>
 </div>
 <!-- PORTFOLIO ITEMS END -->
 
@@ -417,6 +537,26 @@ PORTFOLIO SECTION START
 </div>
 <!-- PORTFOLIO SECTION END -->
 
+<div id="solution" style="background: url('img/how.jpg')" class="container bg">
+
+    <!-- SERVICE SECTION HEADING START -->
+    <div class="sectionhead row wow fadeInUp" style="background-color: rgba(255, 255, 255, 0.8);">
+        <span class="bigicon icon-cup "></span>
+        <h3><b>GIẢI PHÁP KĨ THUẬT</b></h3>
+        <hr class="separetor">
+    </div>
+    <!--SERVICE SECTION HEADING END-->
+    <hr class="hr_blind" style="clear: both;">
+    <div class="col-md-2"></div>
+    <div class="btn-group-vertical col-md-8">
+        <a href="h1.html" rows="2" class="btn btn-primary">CƠ CHẾ TỰ ĐỘNG CẬP NHẬT TIN TỪ CÁC TRANG WEB</a>
+        <a href="h2.html" class="btn btn-primary">CƠ CHẾ PHÂN LOẠI TIN TỨC</a>
+        <a href="h3.html" class="btn btn-primary">HỆ THỐNG TÀI KHOẢN CẢU NGƯỜI DÙNG</a>
+        <a href="h4.html" class="btn btn-primary">CƠ CHẾ HIỂN THỊ TIN TỨC CHO MỖI NGƯỜI DÙNG</a>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<hr class="separetor">
 <!-- ===========================
 TESTIMONIAL SECTION START
 =========================== -->
