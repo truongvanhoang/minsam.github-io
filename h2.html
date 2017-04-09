@@ -78,18 +78,18 @@
     <d>
 <hr>Tật cả những việc phân loại tin tức đều được thực hiện tự động bằng thuật toán với cơ sở dữ liệu là lượng tin tức từ các trang web khác đã lưu vào hệ thống.
 <hr>Phân loại theo chủ đề: 
- Cơ sở dữ liệu sẽ có một danh sách các chủ đề để phân loại. VD: Sport, Stars, Movies, Tecnologies, Arts, Funny, Animal, Politic, science,…
- Với mỗi tin, thuật toán sẽ dựa trên tên mục đăng tin và phần Tags ở phía dưới bản tin ở website gốc, và dựa vào tập hợp các từ sử dụng trong câu, thuật toán sẽ đánh giá tin đó thuộc những chủ đề nào, và lưu tên những chủ đề đó vào phần thuộc tính của tin.
+ <br>Cơ sở dữ liệu sẽ có một danh sách các chủ đề để phân loại. VD: Sport, Stars, Movies, Tecnologies, Arts, Funny, Animal, Politic, science,…
+ <br>Với mỗi tin, thuật toán sẽ dựa trên tên mục đăng tin và phần Tags ở phía dưới bản tin ở website gốc, và dựa vào tập hợp các từ sử dụng trong câu, thuật toán sẽ đánh giá tin đó thuộc những chủ đề nào, và lưu tên những chủ đề đó vào phần thuộc tính của tin.
 <hr>Phân loại theo độ khó từ vựng:
-Xây dựng một danh sách các từ tổng hợp từ tất cả các bản tin đã lưu vào hệ thống.
-*Đánh giá độ khó của từng từ trong danh sách đó bằng thuật toán sau:
-+Dựa trên đánh giá: Nếu từ xuất hiện càng nhiều trong tập hợp dữ liệu thì độ khó của từ càng thấp.
--Đếm tần số xuất hiện của mỗi từ trong tập hợp dữ liệu của hệ thống
-<hr>Sắp xếp danh sách từ theo thứ tự tần số xuất hiện từ lớn đến nhỏ.
-Công thức tính độ khó từ theo thang điểm 10: x = 10(1 – p/t)
+<br>Xây dựng một danh sách các từ tổng hợp từ tất cả các bản tin đã lưu vào hệ thống.
+<br>*Đánh giá độ khó của từng từ trong danh sách đó bằng thuật toán sau:
+<br>+Dựa trên đánh giá: Nếu từ xuất hiện càng nhiều trong tập hợp dữ liệu thì độ khó của từ càng thấp.
+<br>-Đếm tần số xuất hiện của mỗi từ trong tập hợp dữ liệu của hệ thống
+<br>Sắp xếp danh sách từ theo thứ tự tần số xuất hiện từ lớn đến nhỏ.
+<br>Công thức tính độ khó từ theo thang điểm 10: x = 10(1 – p/t)
 trong đó x là độ khó của từ, p là số thứ tự của từ trong danh sách trên, t là tổng số từ có trong danh sách trên
-<hr>VD: Nếu từ  ở vị trí 25 trong danh sách 100 từ thì sẽ có số điểm là 10*(1-25/100)=7.5
-<hr>*Đánh giá độ khó của một bản tin dựa trên công thức:
+<br>VD: Nếu từ  ở vị trí 25 trong danh sách 100 từ thì sẽ có số điểm là 10*(1-25/100)=7.5
+<br>*Đánh giá độ khó của một bản tin dựa trên công thức:
  X=  <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\sum&space;x_{i}.n_{i}}{\sum&space;n_{i}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\sum&space;x_{i}.n_{i}}{\sum&space;n_{i}}" title="\frac{\sum x_{i}.n_{i}}{\sum n_{i}}" /></a> , trong đó xi và ni là độ khó và số lần xuất hiện của từ i, <a href="https://www.codecogs.com/eqnedit.php?latex=\sum&space;n_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum&space;n_{i}" title="\sum n_{i}" /></a> là tổng số từ trong bản tin.
 
     </d>
