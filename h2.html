@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog</title>
+    <title>Giải pháp kĩ thuật</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,24 +43,12 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">Return Enews</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="post.html">Sample Post</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                <ul class="nav navbar-nav navbar-right">                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -77,7 +65,7 @@
                     <div class="site-heading">
                         <h1>Clean Blog</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading"></span>
                     </div>
                 </div>
             </div>
@@ -98,11 +86,11 @@ Xây dựng một danh sách các từ tổng hợp từ tất cả các bản t
 +Dựa trên đánh giá: Nếu từ xuất hiện càng nhiều trong tập hợp dữ liệu thì độ khó của từ càng thấp.
 -Đếm tần số xuất hiện của mỗi từ trong tập hợp dữ liệu của hệ thống
 <hr>Sắp xếp danh sách từ theo thứ tự tần số xuất hiện từ lớn đến nhỏ.
-<hr>Công thức tính độ khó từ theo thang điểm 10: x = 10(1 – p/t)
+Công thức tính độ khó từ theo thang điểm 10: x = 10(1 – p/t)
 trong đó x là độ khó của từ, p là số thứ tự của từ trong danh sách trên, t là tổng số từ có trong danh sách trên
 <hr>VD: Nếu từ  ở vị trí 25 trong danh sách 100 từ thì sẽ có số điểm là 10*(1-25/100)=7.5
 *Đánh giá độ khó của một bản tin dựa trên công thức:
--X=  , trong đó xi và ni là độ khó và số lần xuất hiện của từ i,  là tổng số từ trong bản tin.
+ X=  \frac{\sum x_{i}.n_{i}}{\sum n_{i}} , trong đó xi và ni là độ khó và số lần xuất hiện của từ i, \sum n_{i} là tổng số từ trong bản tin.
 
     </d>
 
