@@ -14,35 +14,29 @@
             color: #fff; /* old IE */
             background-color: #fff; /* Modern Browsers */
         }
-
         .panel-heading a:after {
             font-family: 'Glyphicons Halflings';
             content: "\e114";
             float: right;
             color: grey;
         }
-
         .panel-heading a.collapsed:after {
             content: "\e080";
         }
-
         .bg {
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-
         .vcenter {
             display: inline-block;
             vertical-align: middle;
             float: none;
         }
-
         .transp_img {
             opacity: 0.5;
             filter: alpha(opacity=50); /* For IE8 and earlier */
         }
-
         input {
             margin: 0;
             padding: 0;
@@ -81,7 +75,7 @@
     <!--SLIDER END>
     <!-- DEVEOPER'S NOTE:
     This is a free Bootstrap powered HTML template from EvenFly. Feel free to download, modify and use it for yourself or your clients as long there is no money involved.
-    
+
     Please don't try to sale it from anywhere; because I want it to be free, forever. If you sale it, That's me who deserves the money, not you :)
     -->
 
@@ -110,7 +104,7 @@
     <link rel="stylesheet" href="css/animate.css">
 
     <!-- ===========================
-    ICONS: 
+    ICONS:
     =========================== -->
     <link rel="stylesheet" href="css/simple-line-icons.css">
 
@@ -167,16 +161,19 @@
             </div>
 
             <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-lefy">
+                    <!--YOUR NAVIGATION ITEMS STRAT BELOW-->
+                    <li><a href="#about"><span class="btnicon icon-user"></span>Vấn đề</a></li>
+                    <li><a href="#services"><span class="btnicon icon-cup"></span>Giaỉ pháp</a></li>
+                    <li><a href="#portfolio"><span class="btnicon icon-rocket"></span>Hướng dẫn</a></li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <!--YOUR NAVIGATION ITEMS STRAT BELOW-->
-                    <li><a href="#problem"><span class="btnicon icon-user"></span>Vấn đề</a></li>
-                    <li><a href="#solution"><span class="btnicon icon-cup"></span>Giaỉ pháp</a></li>
-                    <li><a href="#system"><span class="btnicon icon-rocket"></span>Mô hình</a></li>
-                    <li><a href="#benefit"><span class="btnicon icon-bubble"></span>Lợi ích</a></li>
-                    <li><a href="#tech_solution"><span class="btnicon icon-bubble"></span>Kỹ thuật</a></li>
-                    <li><a href="#group"><span class="btnicon icon-bubble"></span>Nhóm</a></li>
+                    <li><a href="#tech_solution"><span class="btnicon icon-rocket"></span>Kỹ thuật</a></li>
+                    <li><a href="#testimonials"><span class="btnicon icon-ghost"></span>Nhóm</a></li>
+
                     <!--don't forget to replace my email address below with yours-->
-                    <li><a href="mailto:m@creatrix.us"><span class="btnicon icon-envelope-open"></span>Liên hệ</a></li>
+                    <li><a href="mailto:m@creatrix.us"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
                 </ul>
 
             </div>
@@ -229,7 +226,7 @@ FEATURED CLIENTS SECTION START
 <!-- ===========================
 PROBLEM SECTION START
 =========================== -->
-<div id="problem" class="container bg font-weight-bold" style="font-weight: bold;">
+<div id="about" class="container bg font-weight-bold" style="font-weight: bold;">
     <h2 class="wow" data-wow-duration="2s">VẤN ĐỀ</h2>
     <h3 class="wow" data-wow-duration="1s">Khi tìm tài liệu, bài đọc tiếng Anh ở sách hoặc trên mạng Internet để đọc
         nhằm nâng cao vốn từ vựng và kĩ năng đọc tiếng Anh, bạn có gặp phải vấn đề:</h3>
@@ -312,7 +309,7 @@ PROBLEM SECTION START
 <!-- ===========================
 SERVICE SECTION START
 =========================== -->
-<div id="solution" style="background: url('img/solution_background.jpg')" class="container bg">
+<div id="services" style="background: url('img/solution_background.jpg')" class="container bg">
 
     <!-- SERVICE SECTION HEADING START -->
     <div class="sectionhead row wow fadeInUp" style="background-color: rgba(255, 255, 255, 0.8);">
@@ -335,11 +332,10 @@ SERVICE SECTION START
 <!-- ===========================
 PORTFOLIO SECTION START
 =========================== -->
-<div id="system" style="background: url('img/procedure.jpg'); background-repeat: no-repeat; background-size: cover">
+<div id="portfolio" style="background: url('img/procedure.jpg'); background-repeat: no-repeat; background-size: cover">
     <div class="sectionhead wow bounceInUp" data-wow-duration="2s" style="background-color: rgba(255, 255, 255, 0.8);">
         <span class="bigicon icon-rocket" style="top: 100px"></span>
-        <h3><b>MÔ HÌNH HỆ THỐNG</b></h3>
-        <h4><b>CHÚNG TÔI THỰC HIỆN NHƯ THẾ NÀO?</b></h4>
+        <h3><b>Hướng dẫn sử dụng</b></h3>
         <hr class="separetor">
         <h4><b>Người dùng hướng đến của Enews là tất cả những người muốn nâng cao khả năng tiếng anh của mình, nhất là
             về
@@ -351,7 +347,7 @@ PORTFOLIO SECTION START
     <!-- PORTFOLIO SECTION HEAD END -->
 
     <!-- PORTFOLIO ITEMS START -->
-    <div class="container" style="min-height: 600px;">
+    <div class="container wow bounceInDown" data-wow-duration="1s" style="min-height: 600px;">
         <!--<div class="col-md-2 dropbtn" ><a href="test.html" target="_blank" class="btn btn-primary btn-xl wow fadeInDown" data-wow-duration="1s">Tìm hiểu</a></div>-->
         <div>
             <div class="col-md-5"></div>
@@ -363,7 +359,7 @@ PORTFOLIO SECTION START
 
         <hr class="hr_blind" style="clear: both;">
 
-        <div>
+        <div style="display: block">
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <img src="img/arrow_down.png" style="width: 20%; height: auto">
@@ -395,8 +391,8 @@ PORTFOLIO SECTION START
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse">
                             <div class="panel-body" style="text-align: left">
-                                Sau khi tạo tên đăng nhập và mật khẩu, hoặc đăng nhập bằng facebook của mình, người
-                                dùng sẽ thực hiện tiếp 2 công đoạn sau:
+                                <p>Sau khi tạo tên đăng nhập và mật khẩu, hoặc đăng nhập bằng facebook của mình, người
+                                    dùng sẽ thực hiện tiếp 2 công đoạn sau:
                                 <ol class="list-group">
                                     <li class="list-group-item">
                                         1. Chọn chủ đề yêu thích của mình:
@@ -412,7 +408,7 @@ PORTFOLIO SECTION START
                                     Sau khi thực hiện xong 2 công đoạn này, người dùng có thể bắt đầu vào Newsfeed để
                                     đọc tin tức.
                                 </ol>
-
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -476,7 +472,7 @@ PORTFOLIO SECTION START
                                         hoặc thú vị.
                                     </li>
                                 </ul>
-
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -530,97 +526,15 @@ PORTFOLIO SECTION START
         </b></h4>
     </div>
 </div>
-
-<hr class="primary">
 <!-- PORTFOLIO ITEMS END -->
 
+<!--Replace the URL below with your dribbble profile URL-->
+<a class="btn btn-default wow fadeInUp" href="http://dribbble.com/srizon" role="button">
+    <span class="btnicon icon-social-dribbble"></span>
+    <span class="button_text">View all items</span>
+</a>
 </div>
 <!-- PORTFOLIO SECTION END -->
-
-<div id="benefit" style="background: url('img/benefit.jpg'); background-size: cover; background-repeat: no-repeat"
-     class="container bg">
-
-    <!-- SERVICE SECTION HEADING START -->
-    <div class="sectionhead wow fadeInUp" style="background-color: rgba(255, 255, 255, 0.4); height: 250px">
-        <span class="bigicon icon-diamond "></span>
-        <h3><b>LỢI ÍCH</b></h3>
-        <hr class="separetor">
-        <h4><b>Những lợi ích khi học tiếng Anh bằng Enews so với cách học truyền thống.</b></h4>
-    </div>
-    <hr style="clear: both;">
-    <!--SERVICE SECTION HEADING END-->
-    <div>
-        <div class="panel-group col-md-4" style="margin-bottom: 0px">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h5 class="panel-title">
-                        <a data-toggle="collapse" data-target="#excites"
-                           href="#benefit">
-                            <b>HỌC VỚI SỰ HỨNG THÚ</b>
-                        </a>
-                    </h5>
-                </div>
-                <div id="excites" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        Các bài đọc, bản tin trong Enews đều được chọn lọc để phù hợp với sở thích và mỗi quan tâm của
-                        bạn, nên việc đọc hang chục bản tin mỗi ngáy sẽ không còn là gánh nặng mà sẽ là niềm vui khi tìm
-                        hiểu về các vấn đề
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel-group col-md-4" style="margin-bottom: 0px">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h5 class="panel-title">
-                        <a data-toggle="collapse" data-target="#ez"
-                           href="#benefit">
-                            <b>HỌC KHÔNG QUA KHÓ KHĂN DẪN ĐẾN NẢN CHÍ</b>
-                        </a>
-                    </h5>
-                </div>
-                <div id="ez" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        Các bản tin Enews cũng được chọn lọc để từ vựng phù hợp và khồn qua khó với trình độ của bạn,
-                        giúp bạn phát triển trình độ tiếng anh từ từ mà không bị nản chí muốn bỏ cuộc
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel-group col-md-4" style="margin-bottom: 0px">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h5 class="panel-title">
-                        <a data-toggle="collapse" data-target="#free"
-                           href="#benefit">
-                            <b>VỪA HỌC TIẾNG ANH VỪA CẬP NHẬT TIN TỨC</b>
-                        </a>
-                    </h5>
-                </div>
-                <div id="free" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                Bình thường, hang ngày bạn thường lên Facebook, báo điện tử để cập nhật tin tức đời sống
-                                và xã hội, và thường tiêu tốn quá nhiều thời gian cho việc này dẫn đến lãng phí.
-                            </li>
-                            <li class="list-group-item">
-                                Bây giờ, với Enews, bạn sẽ cập nhật tin tức ngay trong lúc học tiếng anh, giúp tiết kiệm
-                                nhiều thời gian. Enes sẽ trở thành một “Facebook thứ 2 của bạn”
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3"></div>
-</div>
-
-<hr class="primary">
 
 <div id="tech_solution" style="background: url('img/how.jpg'); background-size: cover; background-repeat: no-repeat"
      class="container bg">
@@ -643,12 +557,11 @@ PORTFOLIO SECTION START
     </div>
     <div class="col-md-3"></div>
 </div>
-
-<hr class="primary">
+<hr class="separetor">
 <!-- ===========================
 TESTIMONIAL SECTION START
 =========================== -->
-<div id="group" class="container">
+<div id="testimonials" class="container">
     <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
         <span class="bigicon icon-ghost"></span>
         <h3>NHÓM PHÁT TRIỂN</h3>
@@ -736,14 +649,14 @@ FOOTER START
         <div class="footerlinks">
             <!-- FOOTER LINKS START -->
             <ul>
-                <li><a href="#problem"><span class="btnicon icon-user"></span>Vấn đề</a></li>
-                <li><a href="#solution"><span class="btnicon icon-cup"></span>Giaỉ pháp</a></li>
-                <li><a href="#system"><span class="btnicon icon-rocket"></span>Mô hình</a></li>
-                <li><a href="#benefit"><span class="btnicon icon-bubble"></span>Lợi ích</a></li>
-                <li><a href="#tech_solution"><span class="btnicon icon-bubble"></span>Kỹ thuật</a></li>
-                <li><a href="#group"><span class="btnicon icon-bubble"></span>Nhóm</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+
                 <!--replace the email address below with your email address-->
-                <li><a href="mailto:m@creatrix.us">Liên hệ</a></li>
+                <li><a href="mailto:m@creatrix.us">Contact</a></li>
             </ul>
         </div>
         <!-- FOOTER LINKS END -->
